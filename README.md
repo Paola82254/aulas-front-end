@@ -33,3 +33,8 @@ Regras criadas com seletor tipo tag, são mais generalistas, ou seja, a formata�
 Regras criadas com o seletor classe, são mais versáteis, ou seja, você desenvolvedor(a), determina onde aplicar a classe e sua formatação.
 
 Classes podem ser reutilizadas na mesma página e combinadas com outras classes
+
+### Id (Identificador)
+
+Regras criadas com o seletor do tipo id, são mais versáteis, ou seja, você desenvolvedor(a), determina onde aplicar a classe e sua formatação.
+**ATENÇÃO** você não pode reaproveitar IDs, ou seja, seletor ID deve ser usado SOMENTE PARA UM ELEMENTO POR PÁGINA.
