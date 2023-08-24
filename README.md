@@ -19,3 +19,17 @@ O CSS é aplicado diretamente em cada tag HTML
 O CSS é criado usando regras (como seletorex, propriedades e valores) dentro da própria página que queremos formatar.
 
 As regras vão valer para todas as tags/ elementos desta página
+
+---
+
+### Sobre seletores
+
+#### Tag
+
+Regras criadas com seletor tipo tag, são mais generalistas, ou seja, a formatação será aplicada à todas as tags que "casem" com o seletor
+
+### Classe
+
+Regras criadas com o seletor classe, são mais versáteis, ou seja, você desenvolvedor(a), determina onde aplicar a classe e sua formatação.
+
+Classes podem ser reutilizadas na mesma página e combinadas com outras classes
