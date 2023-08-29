@@ -4,6 +4,7 @@ CSS necessárias para a formatação do site. */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/watercolor.png);
+    
 }
 
 
@@ -34,8 +35,26 @@ h2 {
 }
 
 h3 {
-    background: linear-gradient(
-        to top,
-        yellow,
-     orange);
+    background: linear-gradient(135deg, #fcecfc 0%,#fba6e1 37%,#fd89d7 76%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.destaque {
+    background-color: black;
+    padding: 3px;
+    color: white;
+    border-radius: 4px;
+
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+a{
+    color: red;
 }
