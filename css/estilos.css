@@ -3,7 +3,8 @@ CSS necessárias para a formatação do site. */
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(../imagens/watercolor.png);
+    background-image: url(../imagens/oriental-tiles.png);
+    background-attachment: fixed;
     
 }
 
@@ -35,6 +36,7 @@ h2 {
 }
 
 h3 {
+    border-radius: 10%;
     background: linear-gradient(135deg, #fcecfc 0%,#fba6e1 37%,#fd89d7 76%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
@@ -57,4 +59,17 @@ img {
 
 a{
     color: red;
+}
+
+ul {
+    margin: 10px;
+}
+
+li{
+    list-style-type: square;
+    line-height: 32px;
+}
+
+li::marker {
+    content: "✋ ";
 }
