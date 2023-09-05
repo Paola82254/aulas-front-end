@@ -7,7 +7,23 @@
 
     <style>
 
-        /* Etapa 01: regras de uso geral, */
+        /* Etapa 01: regras de uso geral, ou seja, regras que vão definir estilos como um todo, não importando muito o tamanho de tela ou o tipo de dispositivo */
+        * {box-sizing: border-box;}
+
+        body {
+            font-family: 'Segoe UI';
+            background-color: goldenrod;
+        }
+
+
+        /* Etapa 02: regras de uso condicional, ou seja, regras que serão aplicadas de acordo com determinadas situações (exemplo: regras que somenre funcionarão se o site estiver em uma tela maior que 1000px)
+
+        Estas regras  especiais/condicionais são conhecidas como "Media Queries" */
+
+        /* para telas que tenham no mínimo 550px, aplique a formataçao tal: */
+        @media screen and (min-width:550px) {
+
+        }
     </style>
 </head>
 <body>
