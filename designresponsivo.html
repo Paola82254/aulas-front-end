@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Design responsivo</title>
 
     <style>
-
         /* Etapa 01: regras de uso geral, ou seja, regras que vão definir estilos como um todo, não importando muito o tamanho de tela ou o tipo de dispositivo */
-        * {box-sizing: border-box;}
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Segoe UI';
             background-color: goldenrod;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background-color: darkblue;
+        }
+
+        b {
+            background-color: white;
+            padding: 2px;
+            border-radius: 4px;
         }
 
 
@@ -22,18 +36,75 @@
 
         /* para telas que tenham no mínimo 550px, aplique a formataçao tal: */
         @media screen and (min-width:550px) {
+            body {
+                background-color: brown;
 
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            hr {
+                width: 30%;
+            }
+        }
+
+
+        /* 1) Faça uma regra condicional para telas
+    com tamanho maior ou igual a 720px em que as
+    seguintes alterações aconteçam:
+    - A div exemplo deve ter largura de 75% e ficar no meio.
+    - Os negritos devem ter outra cor de fundo
+    - O tamanho dos parágrafos deve ser de 18px */
+
+        @media screen and (min-width:720px; ) {
+            .exemplo {
+                width: 75%;
+                margin: auto;
+            }
+
+            b {
+                background-color: blue;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        /* 
+    2) Faça mais uma regra condicional para telas de pelo menos 895px com as seguintes alterações:
+    - O h1 deve receber um plano de fundo com gradiente de cores
+    - A div exemplo deve receber um plano de fundo com qualquer cor e com um pouco de transparência (na cor). */
+        @media screen and (min-width: 895px) {
+            .exemplo {
+                width: 75%;
+                margin: auto;
+                background-color: rgba(0, 255, 255, 0.432);
+            }
+
+            h1 {
+                background: linear-gradient(rgba(0, 0, 255, 0.603));
+            }
+
+            p {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="exemplo">
         <h1> Design responsivo (ou responsividade)</h1>
         <hr>
-        <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites que funcionem corretamente em dispositivos com telas de tamanhos variados</p>
+        <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites que funcionem corretamente em
+            dispositivos com telas de tamanhos variados</p>
         <p>Existem duas abordagens de desenvolvimento responsivo: <b>Mobile first</b> e <b>Desktop First</b></p>
         <p>A mais usada é a <b>Mobile First</b></p>
     </div>
 
 </body>
+
 </html>
