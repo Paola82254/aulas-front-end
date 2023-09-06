@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+
+<style>
+    /* Regras de uso geral */
+    * { box-sizing: border-box; }
+
+    body {
+        font-family: Verdana;
+        background-color: lightblue;
+    }
+
+    .container {
+        background-color: whitesmoke;
+        box-shadow: black 0 0 5px;
+        padding: 5px;
+    }
+    /* CSS RESET (em alguns elementos) */
+     h1, h2, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {padding: 5px 0;}
+
+    h1 {background-color: pink;}
+
+    nav {background-color: yellow;}
+
+    article {padding: 8px;}
+
+   #ColunaA {background-color: orange;}
+   #ColunaB {background-color: purple;}
+   #ColunaC {background-color: green;}
+
+   footer {background-color: grey;
+           height: 100px;
+   }
+
+   /* Regras condicionais (Media Queries) */
+   @media screen and (min-width: 522px ) {
+    header{
+        display: flex;
+        justify-content: space-between;
+
+}
+    h1{ width: 40%;}
+
+   }
+    nav{ width: 60%;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+    
+    }
+
+    @media screen and (min-width:773px) {
+        #ColunaA {width: 70%}
+        #ColunaB {width: 30%;}
+        #ColunaC {width: 100%;}
+    }
+
+    main {display: flex;
+
+        /* flex-wrap quando habilitado faz com que os elementos sejam "quebrados" para a linha de baixo caso não haja espaço */
+        flex-wrap: wrap;
+    }
+/* erro */
+    /* @media screen and (min-width:880px) {
+        body {align-items: center;
+            flex-wrap: wrap}
+        header { height: 90px;}
+        #ColunaA {display: flex;
+        justify-content: space-around;
+        }
+        #ColunaB {display: flex;
+            justify-content: space-around;
+        }
+        #ColunaC { display: flex;
+            justify-content: space-around;
+        }
+    } */
+
+    @media screen and (min-width: 1001px) {
+        .container {max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            height:100px
+        }
+
+        #ColunaA, #ColunaB, #ColunaC {width: 33%;}
+
+        main { flex-wrap: nowrap;
+        /* gap: 16px; */
+        justify-content: space-between;
+        }
+    }
+   
+</style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Exemplo</h1>
+            <nav>
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+            </nav>
+        </header>
+    
+        <main>
+            <article id="ColunaA">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus itaque consequuntur perspiciatis quas sit rem dicta ea, tenetur veritatis omnis nobis repellat laboriosam corporis impedit sunt quaerat quasi reiciendis?</p>
+            </article>
+
+            <article id="ColunaB">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus itaque consequuntur perspiciatis quas sit rem dicta ea, tenetur veritatis omnis nobis repellat laboriosam corporis impedit sunt quaerat quasi reiciendis?</p>
+            </article>
+
+            <article id="ColunaC">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus itaque consequuntur perspiciatis quas sit rem dicta ea, tenetur veritatis omnis nobis repellat laboriosam corporis impedit sunt quaerat quasi reiciendis?</p>
+            </article>
+        </main>
+    
+        <footer>
+            <h2>Rodapé</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aliquam?</p>
+        </footer>
+    </div>
+
+</body>
+</html>
